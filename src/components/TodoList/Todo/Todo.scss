@@ -1,0 +1,37 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+
+  background-color: gray;
+  color: black;
+
+  &__todo {
+    width: 70%;
+    border-radius: 20px;
+
+    font-size: 20px;
+    line-height: 50px;
+
+    border: 2px solid #fff;
+
+    transition: transform 0.5s;
+
+    cursor: pointer;
+  }
+
+  &__todo:hover {
+    transform: scale(1.1);
+  }
+
+  &__todo--complet {
+    background-color: green;
+  }
+
+  &__todo--in-proces {
+    background-color: red;
+  }
+}
